@@ -1,0 +1,38 @@
+=========================================================
+📘 JavaScript — Comparison & Logical Operators (Quick Revision)
+=========================================================
+
+Comparison Operators:
+- ==   Loose equality (type-converts before comparing)
+- ===  Strict equality (no type conversion)
+- !=   Loose inequality
+- !==  Strict inequality
+- >, <, >=, <=  Relational comparisons (numbers/String lexicographically)
+
+Type Coercion Summary:
+- `"2" == 2` → true; `"2" === 2` → false
+- With `==`, JS attempts conversions: empty string → 0, etc.
+- Prefer `===` to avoid surprises.
+
+Special Cases:
+- `null == undefined` → true; `null === undefined` → false
+- Objects compared by reference:
+  `{a:1} === {a:1}` → false; same object reference → true
+
+Logical Operators (return value, not boolean):
+- `&&` → returns first falsy value or last value
+- `||` → returns first truthy value or last value
+- `!` → boolean negation
+
+Examples:
+- `x == y`  // loose equality
+- `x === y` // strict equality
+- `"5" > "12"` → true (string comparison)
+- `0 == false` → true; `0 === false` → false
+- `null < 1` → true (null → 0)
+- `undefined < 1` → false (undefined → NaN)
+- `a || b` returns a if truthy else b
+- `a && b` returns a if falsy else b
+- `!value` converts to boolean and negates
+
+=========================================================

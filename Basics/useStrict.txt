@@ -1,0 +1,33 @@
+=========================================================
+📘 JavaScript — Strict Mode (Quick Revision)
+=========================================================
+
+Enable:
+- "use strict"; at top of script or inside function.
+- Classes & ES6 modules → strict by default.
+
+Why:
+- Catch silent errors.
+- Prevent unsafe actions.
+- Reserve future keywords.
+- Better performance.
+
+Key Differences from Non-Strict:
+- No undeclared vars: x = 1 → ❌ ReferenceError.
+- No write to read-only props: ❌ TypeError.
+- No delete on non-configurable props: ❌ TypeError.
+- No duplicate function params.
+- No octal literals (e.g., 010).
+- No `with` statement.
+- `this` in functions → undefined (not global).
+- `eval` vars don't leak to outer scope.
+
+Quick Examples:
+"use strict";
+a = 10;              // ❌ Error
+let obj = {};
+Object.defineProperty(obj, "p", {value: 1, writable: false});
+obj.p = 2;           // ❌ Error
+function f(a,a){}    // ❌ Error
+
+=========================================================

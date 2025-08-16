@@ -1,0 +1,43 @@
+=========================================================
+📘 JavaScript — Operators (Quick Revision)
+=========================================================
+- Types of Operators:
+  • Unary (1 operand): –x (negation), +x (numeric conversion)
+  • Binary (2 operands): x + y, x * y, etc.
+
+- Arithmetic Operators:
+  +  Addition / String concatenation: `"1" + 2 = "12"`, `2 + "1" = "21"`
+  –  Subtraction
+  *  Multiplication
+  /  Division
+  %  Remainder (`5 % 2 = 1`)
+  ** Exponentiation (`2 ** 3 = 8`, `4 ** 0.5 = 2`)
+
+- Unary Plus `+x`: Converts value to number
+  `+true = 1`, `+"" = 0`
+
+- Operator Behavior:
+  `"2" / "3" = 0.6667` (numeric)
+  `"2" * "3" = 6`
+
+- Assignment (`=`) returns the assigned value:
+  `let a; alert(a = 3 * 2); // 6`
+
+- Modify In Place:
+  `n += 5;`, `n *= 2;` shorthand for `n = n + 5`, `n = n * 2`
+
+- Increment / Decrement:
+  `++x` (prefix) returns new value  
+  `x++` (postfix) returns old value  
+  Example:
+    let x = 1, y = ++x; // x=2, y=2
+    x = 1; y = x++;      // x=2, y=1
+
+- Operator Precedence:
+  Higher to lower: `++`, `**`, `* /`, `+ -`, then `=`
+
+- Comma Operator (`,`)
+  Evaluates multiple expressions, returns only last:
+    `(1 + 2, 3 + 4) = 7`
+
+=========================================================

@@ -1,0 +1,34 @@
+=========================================================
+📘 JavaScript — Type Conversions (Quick Revision)
+=========================================================
+
+- JavaScript auto-converts types in many contexts; we also use explicit conversion when needed.
+
+1. String Conversion
+   - Implicit: e.g., alert(value), or `""+value`.
+   - Explicit: `String(value)` → `'true'`, `'null'`, `'123'`.
+
+2. Numeric Conversion
+   - Implicit in math operations, e.g., `"6"/"2" = 3`.
+   - Explicit: `Number(value)`:
+     - `undefined` → `NaN`
+     - `null` → `0`
+     - `true` / `false` → `1` / `0`
+     - String trimmed of spaces → number or `NaN`.
+
+3. Boolean Conversion
+   - Use `Boolean(value)` or contexts like `if`, `!`, `&&`, `||`.
+   - Falsy: `0`, `null`, `undefined`, `NaN`, `""` → `false`.
+   - Everything else (even `"0"` or `" "`) → `true`.
+
+4. Summary Table
+   - String: `String(value)`
+   - Number: `Number(value)` (or `+value`)
+   - Boolean: `Boolean(value)` (or `!!value`)
+
+5. Gotchas to Remember
+   - `undefined` → `NaN`, *not* `0`.
+   - `"0"` and whitespace strings → `true` in boolean context.
+   - Math operations auto-convert; mixing types may lead to unexpected results.
+
+=========================================================

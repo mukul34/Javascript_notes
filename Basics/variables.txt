@@ -1,0 +1,30 @@
+=========================================================
+📘 JavaScript — Variables (Quick Revision)
+=========================================================
+
+Keywords:
+- let → block-scoped, mutable.
+- const → block-scoped, immutable ref.
+- var → function-scoped (avoid).
+
+Rules:
+- Start with letter, $, or _; case-sensitive.
+- No reserved words.
+- Cannot redeclare with let/const in same scope.
+
+Best Practices:
+- Use const by default, let if reassigning.
+- Avoid var.
+- Use meaningful names (userName, totalPrice).
+
+Special:
+- Assigning without declaration → ❌ in strict mode.
+- const value can't be reassigned, but object props can be changed.
+- UPPERCASE for known constants (COLOR_RED).
+
+Examples:
+let age = 25;
+const BIRTHDAY = '01-01-2000';
+var oldWay = "avoid";
+
+=========================================================

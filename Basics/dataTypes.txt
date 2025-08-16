@@ -1,0 +1,40 @@
+=========================================================
+📘 JavaScript — Data Types (Quick Revision)
+=========================================================
+
+- JavaScript is dynamically typed: variables can hold any type.
+
+- 8 Basic Types:
+  * Primitives:
+    - number (includes special values: Infinity, -Infinity, NaN)
+    - bigint (for integers beyond ±2^53–1)
+    - string (text, quote types: " ", ' ', ` ` with template strings)
+    - boolean (true / false)
+    - null (represents “nothing”)
+    - undefined (unassigned)
+    - symbol (unique identifiers)
+  * Object (non-primitive, key-value collections)
+
+- Numbers:
+  * Safe integer range: ±(2^53–1)
+  * NaN is sticky: any operation with it yields NaN
+  * Infinity results from division by zero
+
+- BigInt: Create using `n` suffix, e.g., `123456789123456789n`
+
+- Strings:
+  * Immutable sequence of characters, no separate char type
+  * Template literals (backticks) enable `${…}` interpolation
+
+- Boolean: Result of comparisons or explicit (`true`, `false`)
+
+- null vs undefined:
+  * `undefined`: default unassigned state
+  * `null`: explicit "no value"
+  * `typeof null` returns `"object"` (peculiarity)
+
+- Symbol: Guaranteed unique, used as object property keys
+
+- Object type: Used for complex, mutable structured data
+
+=========================================================
