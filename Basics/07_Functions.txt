@@ -1,0 +1,83 @@
+=========================================================
+📘 JavaScript — Function Basics (Quick Revision)
+=========================================================
+
+1. Function Declaration:
+   function name(param1, param2) {
+     // body
+   }
+   Call with name(arg1, arg2).
+
+2. Local vs Outer Variables:
+   - Variables inside functions are local.
+   - Functions can access outer/global variables.
+   - Inner variables shadow outer ones if names match.
+
+3. Parameters vs Arguments:
+   - Parameter: variable in function definition.
+   - Argument: actual value passed during call.
+
+4. Default Parameters:
+   function f(x = defaultValue) { ... }
+   If no argument or undefined, default is used.
+
+5. Return:
+   - return value → gives result and stops function.
+   - No return or empty return → returns undefined.
+
+6. Return Safety:
+   - Do not break `return` and expression with newline; JavaScript inserts semicolon automatically.
+
+7. Function Naming:
+   - Should be verbs describing action (get…, show…, calc…, check…).
+   - Single action per function (follows SRP).
+
+8. Functions as Comments:
+   - Small functions with clear names act like comments for code readability.
+
+=========================================================
+=========================================================
+📘 JavaScript — Functions & Expressions (Quick Revision)
+=========================================================
+
+1. Function Declaration:
+   function name(params) {
+     // body
+   }
+   - Hoisted: usable before definition.
+   - Example:
+     show(); // works
+     function show() { alert("Hi"); }
+
+2. Function Expression:
+   let fn = function(params) {
+     // body
+   };
+   - Not hoisted: usable only after definition.
+   - Can be anonymous or named (for recursion).
+   - Example:
+     let greet = function hello() {
+       console.log(hello.name);
+     };
+
+3. Function is a Value:
+   - Can assign, copy, pass as argument, return from other functions.
+   - Example:
+     let sayHi = function() { alert("Hi"); };
+     let f = sayHi;
+     f(); // works
+
+4. Callback Functions:
+   - Functions passed as arguments for later use.
+   - Example:
+     ask("Agree?",
+       function() { alert("Yes"); },
+       function() { alert("No"); }
+     );
+
+5. Declaration vs Expression Differences:
+   - Declarations are hoisted; expressions are not.
+   - Use declarations for general reusable funcs.
+   - Use expressions for conditional assignment or callbacks.
+
+=========================================================
